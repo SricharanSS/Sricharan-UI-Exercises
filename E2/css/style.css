@@ -1,0 +1,98 @@
+* {
+    margin: 0 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 530;
+}
+
+#headerDiv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+img {
+    width: 100%;
+}
+header { 
+    background-color: #43133e;
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+button {
+    font-size: 1em;
+    border: 0;
+    color: white;
+    background-color: #7a1755;
+    padding: 8px 12px 8px 12px;
+    margin: 6px auto 6px auto;
+}
+
+.stackContainer {
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+}
+h3 {
+    font-size: 2em;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+p {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: lighter;
+}
+.des {
+    font-weight: lighter;
+}
+
+.stack {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 30%;
+}
+
+
+#pinkText {
+    color: #840057;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    font-size: 30pt;
+    font-weight: lighter;
+}
+#pinkText h4 {
+    font-weight: 300;
+    font-size: 1.5cm;
+}
+
+#paraDiv {
+    margin: 40px auto;
+    width: 55%;
+    font-size: 18pt;
+    line-height: 1.5;
+}
+#para {
+    text-align: justify;
+    font-weight: 200;
+}
+footer {
+    background-color: #7a1755;
+    text-align: center;
+    
+}
+#footerDiv {
+    text-align: left;
+    width: 90%;
+    color: white;
+    margin: auto;
+    padding: 15px;
+}
+
+#copyrightsDiv {
+    line-height: 0.8;
+}
+
