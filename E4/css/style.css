@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    text-align: center;
+    color: white;
+    background-color: #145f94;
+    font-size: 15pt;
+    font-weight: bolder;
+    padding: 1.5%;
+}
+
+#mainBody {
+    text-align: center;
+}
+#contentBody {
+    width: 88%;
+    margin: 2% auto;
+}
+
+/* Left Floating Containers */
+.floatDivLeft {
+    border-style: solid;
+    border-color: #145f94;
+    float: left;
+    margin: auto 0 1.5% 0;
+    width: 60%;
+}
+.floatDivLeft .title {
+    background-color: #145f94;
+    color: white;
+    font-weight: bolder;
+    font-size: 16pt;
+    padding: 1.5% 3% 1.5% 3%;
+    text-align: left;
+}
+.floatDivLeft p {
+    text-align: justify;
+    padding: 3%;
+    background-color: #f6f6f6;
+    font-size: 13pt;
+    line-height: 1.5;
+}
+
+/* Right Floating Containers */
+.floatDivRight {
+    border-style: solid;
+    border-color: #145f94;
+    float: right;
+    margin: auto 0 1.5% 0;
+    width: 38%;
+}
+.floatDivRight .title {
+    background-color: #145f94;
+    color: white;
+    font-weight: bolder;
+    font-size: 16pt;
+    text-align: left;
+    padding: 2.5% 3.5% 2.5% 3.5%;
+}
+.floatDivRight p {
+    text-align: justify;
+    padding: 4%;
+    background-color: #f6f6f6;
+    font-size: 13pt;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .floatDivLeft, .floatDivRight {
+        width: 100%;
+    }
+}
