@@ -15,8 +15,7 @@ header {
     text-align: center;
 }
 #contentBody {
-    width: 86%;
-    background-color: purple;
+    width: 88%;
     margin: 2% auto;
 }
 
@@ -25,7 +24,7 @@ header {
     border-style: solid;
     border-color: #145f94;
     float: left;
-    margin: auto 1% 1% 1%;
+    margin: auto 0 1.5% 0;
     width: 60%;
 }
 .floatDivLeft .title {
@@ -40,7 +39,7 @@ header {
     text-align: justify;
     padding: 3%;
     background-color: #f6f6f6;
-    font-size: 14pt;
+    font-size: 13pt;
     line-height: 1.5;
 }
 
@@ -49,8 +48,8 @@ header {
     border-style: solid;
     border-color: #145f94;
     float: right;
-    margin: auto 1% 1% 1%;
-    width: 35%;
+    margin: auto 0 1.5% 0;
+    width: 38%;
 }
 .floatDivRight .title {
     background-color: #145f94;
@@ -64,6 +63,6 @@ header {
     text-align: justify;
     padding: 4%;
     background-color: #f6f6f6;
-    font-size: 14pt;
+    font-size: 13pt;
     line-height: 1.5;
 }
