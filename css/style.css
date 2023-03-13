@@ -19,29 +19,16 @@ section > div {
     background-color: purple;
 }
 
-.products {
-    text-align: center;
-    background-color: #24252a;
-    padding: 1%;
-    width: fit-content;
-}
-.products > img {
-    max-width: 55%;
-}
-
 footer {
     color: white;
     background-color:  #000000;
     width: 100%;
-    display: flex;
     position: fixed;
     bottom: 0;
-    justify-content: center;
+    text-align: center;
 }
 footer > ul {
     width: 80%;
-    display: flex;
-    justify-content: center;
 }
 footer > ul > li {
     font-size: 18pt;
