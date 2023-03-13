@@ -19,6 +19,15 @@ section > div {
     background-color: purple;
 }
 
+.products {
+    text-align: center;
+    background-color: #24252a;
+    padding: 1%;
+    width: fit-content;
+}
+.products > img {
+    max-width: 55%;
+}
 
 footer {
     color: white;
