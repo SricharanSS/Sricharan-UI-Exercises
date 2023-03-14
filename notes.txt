@@ -1,0 +1,6 @@
+Main Background : #2a2b30
+Product Background : #24252a
+Footer : #000000
+Drop down button : #d8d8d8
+Drop down menu : #eeeeee
+Size Indicator : #88b181
