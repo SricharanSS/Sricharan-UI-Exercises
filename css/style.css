@@ -1,14 +1,63 @@
 * {
     background-color: #000000;
     color: #ffffff;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
-    margin: auto 4.9% auto 4.9%;
-    font-size: 25pt;
+    margin: auto 5.4%;
+    font-size: 20pt;
     padding: 0;
 }
 
-div > p {
+body {
     margin: 0;
+}
+nav {
+    margin: 0;
+    padding: 65px 85px;
+}
+nav > p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
     float: right;
+    text-align: right;
+}
+
+.header {
+    text-align: center;
+    padding: 80px;
+}
+
+h1 {
+    font-size: 6.5em;
+    font-weight: 200;
+}
+
+#bhatt {
+    margin: 0;
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+
+h3 {
+    padding: 8px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #cecece;
+}
+#product {
+    margin: 0;
+    font-size: 2rem;
+    color: #4a90e2;
+}
+
+.image-container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container > img {
+    width: 25%;
 }
