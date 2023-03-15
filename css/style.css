@@ -1,4 +1,14 @@
 * {
     background-color: #000000;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: auto 4.9% auto 4.9%;
+    font-size: 25pt;
+    padding: 0;
+}
+
+div > p {
+    margin: 0;
+    float: right;
 }
