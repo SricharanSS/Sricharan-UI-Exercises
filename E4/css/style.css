@@ -7,7 +7,7 @@ header {
     text-align: center;
     color: white;
     background-color: #145f94;
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 500;
     padding: 1.7%;
 }
@@ -26,14 +26,13 @@ header {
     border-style: solid;
     border-color: #145f94;
     margin: auto 0 21px 0;
-    /* width: 60%; */
 }
 .left-container > div > div {
     background-color: #145f94;
-    color: white;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 500;
     font-size: 16.5pt;
-    padding: 1.5% 3% 1.5% 3%;
+    padding: 1.5% 3%;
     text-align: left;
 }
 .left-container > div > p {
@@ -54,15 +53,14 @@ header {
     border-style: solid;
     border-color: #145f94;
     margin: auto 0 21px 0;
-    /* width: 38%; */
 }
 .right-container > div > div {
     background-color: #145f94;
-    color: white;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 500;
     font-size: 16.5pt;
     text-align: left;
-    padding: 2.5% 3.5% 2.5% 3.5%;
+    padding: 2.5% 3.5%;
 }
 .right-container > div > p {
     text-align: justify;
