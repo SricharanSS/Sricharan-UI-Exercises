@@ -6,16 +6,17 @@ header {
     text-align: center;
     color: white;
     background-color: #145f94;
-    font-size: 15pt;
-    font-weight: bolder;
-    padding: 1.5%;
+    font-size: 14pt;
+    font-weight: 500;
+    padding: 1.7%;
 }
 
 #mainBody {
     text-align: center;
+    padding: 0;
 }
 #contentBody {
-    width: 88%;
+    width: 83%;
     margin: 2% auto;
 }
 
@@ -37,7 +38,7 @@ header {
 }
 .floatDivLeft p {
     text-align: justify;
-    padding: 3%;
+    padding: 25px;
     background-color: #f6f6f6;
     font-size: 13pt;
     line-height: 1.5;
@@ -61,7 +62,7 @@ header {
 }
 .floatDivRight p {
     text-align: justify;
-    padding: 4%;
+    padding: 25px;
     background-color: #f6f6f6;
     font-size: 13pt;
     line-height: 1.5;
