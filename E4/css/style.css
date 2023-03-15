@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 header {
     text-align: center;
@@ -12,31 +13,34 @@ header {
 }
 
 #mainBody {
-    text-align: center;
-    padding: 0;
-}
-#contentBody {
     width: 83%;
-    margin: 2% auto;
+    margin: 2.2% auto;
 }
+/* #contentBody {
+    width: 81%;
+    margin: 2% auto;
+} */
 
 /* Left Floating Containers */
-.floatDivLeft {
+.left-container {
+    float: left;
+    width: 61%;
+}
+.left-container > div {
     border-style: solid;
     border-color: #145f94;
-    float: left;
-    margin: auto 0 1.5% 0;
-    width: 60%;
+    margin: auto 0 21px 0;
+    /* width: 60%; */
 }
-.floatDivLeft .title {
+.left-container > div > div {
     background-color: #145f94;
     color: white;
-    font-weight: bolder;
-    font-size: 16pt;
+    font-weight: 600;
+    font-size: 16.5pt;
     padding: 1.5% 3% 1.5% 3%;
     text-align: left;
 }
-.floatDivLeft p {
+.left-container > div > p {
     text-align: justify;
     padding: 25px;
     background-color: #f6f6f6;
@@ -44,23 +48,27 @@ header {
     line-height: 1.5;
 }
 
+
 /* Right Floating Containers */
-.floatDivRight {
+.right-container {
+    float: right;
+    width: 37.5%;
+}
+.right-container > div {
     border-style: solid;
     border-color: #145f94;
-    float: right;
-    margin: auto 0 1.5% 0;
-    width: 38%;
+    margin: auto 0 21px 0;
+    /* width: 38%; */
 }
-.floatDivRight .title {
+.right-container > div > div {
     background-color: #145f94;
     color: white;
-    font-weight: bolder;
-    font-size: 16pt;
+    font-weight: 600;
+    font-size: 16.5pt;
     text-align: left;
     padding: 2.5% 3.5% 2.5% 3.5%;
 }
-.floatDivRight p {
+.right-container > div > p {
     text-align: justify;
     padding: 25px;
     background-color: #f6f6f6;
@@ -68,8 +76,10 @@ header {
     line-height: 1.5;
 }
 
+
+
 @media only screen and (max-width: 768px) {
-    .floatDivLeft, .floatDivRight {
+    .left-container, .right-container {
         width: 100%;
     }
 }
