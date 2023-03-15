@@ -12,14 +12,10 @@ header {
     padding: 1.7%;
 }
 
-#mainBody {
+#main-body {
     width: 83%;
     margin: 2.2% auto;
 }
-/* #contentBody {
-    width: 81%;
-    margin: 2% auto;
-} */
 
 /* Left Floating Containers */
 .left-container {
@@ -75,8 +71,6 @@ header {
     font-size: 13pt;
     line-height: 1.5;
 }
-
-
 
 @media only screen and (max-width: 768px) {
     .left-container, .right-container {
