@@ -17,17 +17,14 @@ header {
     margin: 2.2% auto;
 }
 
-/* Left Floating Containers */
-.left-container {
-    float: left;
-    width: 61%;
-}
-.left-container > div {
+.doordarshan, .sony-network, .zee-network, 
+.sun-network, .star-network {
     border-style: solid;
     border-color: #145f94;
     margin: auto 0 21px 0;
 }
-.left-container > div > div {
+
+.left-container .title {
     background-color: #145f94;
     color: #ffffff;
     font-weight: 500;
@@ -35,6 +32,22 @@ header {
     padding: 1.5% 3%;
     text-align: left;
 }
+
+.right-container .title {
+    background-color: #145f94;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16.5pt;
+    text-align: left;
+    padding: 2.5% 3.5%;
+}
+
+/* Left Floating Containers */
+.left-container {
+    float: left;
+    width: 61%;
+}
+
 .left-container > div > p {
     text-align: justify;
     padding: 25px;
@@ -49,19 +62,7 @@ header {
     float: right;
     width: 37.5%;
 }
-.right-container > div {
-    border-style: solid;
-    border-color: #145f94;
-    margin: auto 0 21px 0;
-}
-.right-container > div > div {
-    background-color: #145f94;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 16.5pt;
-    text-align: left;
-    padding: 2.5% 3.5%;
-}
+
 .right-container > div > p {
     text-align: justify;
     padding: 25px;
