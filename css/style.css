@@ -1,13 +1,15 @@
 * {
-    background-color: #000000;
-    color: #ffffff;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: auto 5.4%;
     font-size: 20pt;
+    margin: auto 5.4%;
+    box-sizing: border-box; 
 }
 
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 nav {
     margin: 0;
@@ -106,19 +108,14 @@ h3 {
 .social-media-icons {
     text-align: center;
 }
-.social-media-icons > div {
+.social-media-icons > i {
     margin: auto 7px;
-    display: inline-block;
-    object-fit: contain;
     border: 1px solid;
     padding: 1%;
-    width: 50px;
-    height: 50px;
+    width: 53px;
+    height: 53px;
     border-color: #ffffff;
     border-radius: 50%;
-}
-.social-media-icons > div > i {
-    margin: 0;
 }
 
 footer {
