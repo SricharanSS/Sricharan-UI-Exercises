@@ -2,6 +2,10 @@
     margin-left: 0;
     box-sizing: border-box;
 }
+
+/**
+    Body Styling - START
+*/
 body {
     color: #ffffff;
     font-family: sans-serif;
@@ -10,6 +14,9 @@ body {
     background-size: cover;
     height: 100vh;
 }
+/*
+    Body Styling - END
+**/
 
 
 /**
