@@ -1,8 +1,10 @@
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
 #headerDiv {
     font-weight: 700;
     font-size: 1em;
