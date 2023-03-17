@@ -42,6 +42,7 @@ body {
 **/
 
 .menu-content {
+    /* display: none; */
     position: absolute;
     top: 135px;
     background-color: #000000;
@@ -50,7 +51,21 @@ body {
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
 }
-
+.menu-content ul {
+    font-family: 'roboto', sans-serif;
+    /* background-color: pink; */
+    padding-top: 23px;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+.menu-content ul li {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: 300;
+}
 /**
     Side Text Styling - START
  */
