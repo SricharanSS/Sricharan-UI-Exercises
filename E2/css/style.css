@@ -6,6 +6,10 @@
 body {
     font-family: 'Roboto', sans-serif;   
 }
+
+/**
+    Header Styling - START
+*/
 #headerDiv {
     font-weight: 700;
     font-size: 1em;
@@ -19,6 +23,14 @@ header {
     color: #ffffff;
     text-align: center;
 }
+/* 
+    Header Styling - END
+**/
+
+
+/**
+    Stack Container - START
+*/
 .stackContainer {
     text-align: center;
     width: 98%;
@@ -49,7 +61,6 @@ h6 {
     text-align: left;
     width: 30%;
 }
-
 button {
     font-size: 1em;
     font-weight: 100;
@@ -59,7 +70,13 @@ button {
     padding: 16px 30px;
     margin: 6px auto;
 }
+/*
+    Stack Container - END
+**/
 
+/**
+     Text and Paragraph - START
+*/
 #pinkText {
     color: #840057;
     text-align: center;
@@ -72,7 +89,6 @@ button {
     font-size: 1.8em;
     margin: 30px auto 25px;
 }
-
 #paragraphDiv {
     margin: 80px auto;
     width: 75%;
@@ -85,7 +101,13 @@ button {
     font-size: 1.2em;
     line-height: 1.7;
 }
+/*
+     Text and Paragraph - END
+**/
 
+/**
+    Footer Styling - START
+*/
 footer {
     background-color: #7a1755;
     text-align: left;
@@ -104,3 +126,6 @@ footer {
     font-weight: 250;
     font-size: 1.2em;
 }
+/*
+    Footer Styling - END
+**/
