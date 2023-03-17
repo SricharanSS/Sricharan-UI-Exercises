@@ -16,7 +16,7 @@ section {
 }
 section > div {
     width: 85%;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 footer {
