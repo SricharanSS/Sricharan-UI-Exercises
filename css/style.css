@@ -9,21 +9,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/** 
+    Nav Bar and Header  - START
+*/
 nav {
     padding: 75px 0 55px;
 }
 #logoImg {
     width: 13%;
 }
+/** 
+    Nav Bar and Header - END 
+*/
 
 article {
     margin: 0 8.5%;
 }
 
-.product-stack1 , .product-stack2 {
+
+/** 
+    Product stack styling - START 
+*/
+.product-stack1 {
     margin-bottom: 50px;
 }
-
+.product-stack2 {
+    margin-bottom: 140px;
+}
 .shirt-container, .jacket-container, 
 .tshirt-container, .sweatshirt-container {
     display: inline-block;
@@ -32,13 +44,13 @@ article {
     text-align: center;
 }
 
+/* Product Image Styling */
 .product-image {
     position: relative;
     padding-top: 85px;
     height: 410px;
     background-color: #24252a;
 }
-
 .product-image img {
     height: 235px;
 }
@@ -49,6 +61,8 @@ article {
     right: 20px;
     font-size: 1.3em;
 }
+
+/* Stack Alignment Styling */
 .shirt-container {
     margin-top: 0;
     margin-right: 25px;
@@ -63,6 +77,7 @@ article {
     margin-top: 0;
 }
 
+/* Size Button */
 .size {
     color: #2a2b30;
     font-size: 1.45em;
@@ -77,6 +92,7 @@ article {
     bottom: -30px;
 }
 
+/* Product description (Name, Price & ADD TO CART button) */
 .description {
     margin-top: 15px;
     text-align: left;
@@ -99,8 +115,14 @@ article {
     padding: 10px 20px;
     background-color: #2a2b30;
 }
+/**
+    Product stack styling - END 
+*/
 
 
+/** 
+    Footer Styling 
+*/
 footer {
     width: 100%;
     background-color: #000000;
@@ -117,3 +139,6 @@ footer > ul > li {
     display: inline-block;
     margin: 2.4% 2%;
 }
+/**
+    Footer Styling
+ */
