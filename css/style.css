@@ -1,38 +1,119 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
+    color: #ffffff;
+    background-color: #2a2b30;
     font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    padding: 75px 0 55px;
+}
+#logoImg {
+    width: 13%;
+}
+
+article {
+    margin: 0 8.5%;
+}
+
+.product-stack1 , .product-stack2 {
+    margin-bottom: 50px;
+}
+
+.shirt-container, .jacket-container, 
+.tshirt-container, .sweatshirt-container {
+    display: inline-block;
+    height: 535px;
+    width: 22%;
+    text-align: center;
+}
+
+.product-image {
+    position: relative;
+    padding-top: 85px;
+    height: 410px;
+    background-color: #24252a;
+}
+
+.product-image img {
+    height: 235px;
+}
+.product-image i {
+    color: #85ae80;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.3em;
+}
+.shirt-container {
+    margin-top: 0;
+    margin-right: 25px;
+}
+.jacket-container, .tshirt-container {
+    margin-top: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.sweatshirt-container {
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+.size {
+    color: #2a2b30;
+    font-size: 1.45em;
+    background-color: #85ae80;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 5%;
+    font-weight: 800;
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+}
+
+.description {
+    margin-top: 15px;
+    text-align: left;
+    background-color: #2a2b30;
+}
+.description h4 {
+    font-size: 1.5em;
+    font-weight: 350;
+}
+.description p {
+    color: #959696;
+    font-size: 1.4em;
+    margin-top: 14x;
+    margin-bottom: 10px;
+}
+.description button {
+    font-size: 1.01em;
+    color: #959696;
+    border-style: solid;
+    padding: 10px 20px;
     background-color: #2a2b30;
 }
 
-#logo {
-    max-width: 14%;
-    margin: 4.5% auto 4.5% auto;
-}
-section {
-    margin: 0 6% 0 6%;
-}
-section > div {
-    width: 85%;
-    /* background-color: purple; */
-}
 
 footer {
-    color: white;
-    background-color:  #000000;
     width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
     position: fixed;
     bottom: 0;
-    text-align: center;
 }
 footer > ul {
-    width: 80%;
+    text-align: center;
 }
 footer > ul > li {
-    font-size: 18pt;
-    font-weight: 550;
+    font-size: 1.5em;
     display: inline-block;
-    margin: 3% 2.5% 3% 2.5%
+    margin: 2.4% 2%;
 }
