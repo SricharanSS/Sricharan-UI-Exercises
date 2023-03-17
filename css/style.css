@@ -44,14 +44,14 @@ nav {
 }
 .dropdown-content ul {
     background-color: #eee;
-    height: 180px;
+    height: 194px;
     width: 260px;
     padding: 12px 0;
 }
 .dropdown-content li {
     font-weight: 600;
     background-color: #eee;
-    padding: 12px 16px;
+    padding: 12px 25px;
     list-style: none;
 }
 .dropdown:hover .dropdown-content{
