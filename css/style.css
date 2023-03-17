@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+
+/**
+    Nav Bar Styling - START
+*/
 .nav-tag {
     width: 100%;
     font-size: 2.5em;
@@ -22,6 +26,8 @@ body {
 .nav-tag * {
     display: inline-block;
 }
+
+/* Menu Button */
 #menu {
     position: absolute;
     top: 50px;
@@ -31,7 +37,14 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
+/*
+    Nav Bar Styling - END
+**/
 
+
+/**
+    Side Text Styling - START
+ */
 #side-text > p{
     font-size: 2.5em;
     font-weight: 600;
@@ -43,7 +56,14 @@ body {
 #side-text > p > span {
     font-size: 3em;
 }
+/*
+    Side Text Styling - END
+ **/
 
+
+/**
+    Page Text - START
+*/
 #page-text {
     width: 100%;
     text-align: center;
@@ -62,10 +82,19 @@ body {
 #page-text p:last-child {
     font-size: 9.2em;
 }
+/* 
+    Page Text - END
+**/
 
+/**
+    Social Media Icons - START
+*/
 #social-media-icons {
     font-size: 35px;
     position: absolute;
     bottom: 15px;
     right: 20px;
 }
+/*
+    Social Media Icons - END
+**/
