@@ -30,7 +30,7 @@ body {
     text-align: center;
     width: 90%;
 }
-.nav-tag .menu .fancy-hats {
+.nav-tag .menu .fancy-hats .menu-container {
     display: inline-block;
 }
 .fancy-hats {
@@ -47,9 +47,8 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
-
-#menu:hover+.menu-content{
-    display: inline-block;
+#menu:hover+.menu-content , .menu-content:hover {
+    display: block;
     z-index: 1;
 }
 /*
@@ -76,6 +75,10 @@ body {
 .menu-content li {
     display: block;
     margin: 22px 0;  
+}
+.menu-content li:hover {
+    font-weight: 400;
+    cursor: pointer;
 }
 /*
     Menu Content Styling - END
