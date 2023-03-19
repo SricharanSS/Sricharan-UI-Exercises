@@ -16,7 +16,7 @@ nav {
     padding: 75px 0 55px;
     position: relative;
 }
-#logoImg {
+#logo-img {
     width: 13%;
 }
 
@@ -61,7 +61,7 @@ nav {
     Nav Bar and Header - END 
 */
 
-article {
+.main-content {
     margin: 0 8.5%;
 }
 
@@ -75,8 +75,7 @@ article {
 .product-stack2 {
     margin-bottom: 140px;
 }
-.shirt-container, .jacket-container, 
-.tshirt-container, .sweatshirt-container {
+.product-container {
     display: inline-block;
     height: 535px;
     width: 22%;
@@ -102,16 +101,21 @@ article {
 }
 
 /* Stack Alignment Styling */
-.shirt-container {
+.product-stack1 .product-container:first-of-type, 
+.product-stack2 .product-container:first-of-type {
     margin-top: 0;
     margin-right: 25px;
 }
-.jacket-container, .tshirt-container {
+.product-stack1 .product-container:nth-of-type(2), 
+.product-stack1 .product-container:nth-of-type(3),
+.product-stack2 .product-container:nth-of-type(2), 
+.product-stack2 .product-container:nth-of-type(3){
     margin-top: 0;
     margin-left: 25px;
     margin-right: 25px;
 }
-.sweatshirt-container {
+.product-stack1 .product-container:last-of-type, 
+.product-stack2 .product-container:last-of-type {
     margin-left: 25px;
     margin-top: 0;
 }
@@ -175,6 +179,7 @@ footer > ul {
 }
 footer > ul > li {
     font-size: 1.5em;
+    font-weight: 400;
     display: inline-block;
     margin: 2.4% 2%;
 }
