@@ -26,12 +26,15 @@ body {
     width: 100%;
     font-size: 2.5em;
 }
-.nav-tag > div {
+.nav-tag .menu .fancy-hats{
     text-align: center;
     width: 90%;
 }
-.nav-tag * {
+.nav-tag .menu .fancy-hats {
     display: inline-block;
+}
+.fancy-hats {
+    text-align: center;
 }
 
 /* Menu Button */
@@ -44,35 +47,40 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
+
+#menu:hover+.menu-content{
+    display: inline-block;
+    z-index: 1;
+}
 /*
     Nav Bar Styling - END
 **/
 
+/**
+    Menu Content Styling - START
+*/
 .menu-content {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 135px;
     background-color: #000000;
-    height: 765px;
-    width: 260px;
     border-top-right-radius: 28px;
     border-bottom-right-radius: 28px;
-}
-.menu-content ul {
+    width: 270px;
+    height: 760px;
     font-family: 'roboto', sans-serif;
-    /* background-color: pink; */
-    padding-top: 23px;
-    padding-left: 0;
-    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
     text-align: center;
 }
-.menu-content ul li {
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
-    list-style: none;
-    font-size: 1.2em;
-    font-weight: 300;
+.menu-content li {
+    display: block;
+    margin: 22px 0;  
 }
+/*
+    Menu Content Styling - END
+**/
+
 /**
     Side Text Styling - START
  */
