@@ -99,8 +99,12 @@ nav {
     right: 20px;
     font-size: 1.3em;
 }
+.product-image i:hover {
+    cursor: pointer;
+}
 
 /* Stack Alignment Styling */
+
 .product-stack1 .product-container:first-of-type, 
 .product-stack2 .product-container:first-of-type {
     margin-top: 0;
@@ -119,10 +123,13 @@ nav {
     margin-left: 25px;
     margin-top: 0;
 }
+/* .product-container {
+    margin: 0 auto;
+} */
 
 /* Size Button */
 .size {
-    color: #2a2b30;
+    color: #111111;
     font-size: 1.45em;
     background-color: #85ae80;
     width: 55px;
@@ -158,6 +165,11 @@ nav {
     padding: 10px 20px;
     background-color: #2a2b30;
 }
+.description button:hover {
+    cursor: pointer;
+    color: #111111;
+    background-color: #85ae80;
+}
 /**
     Product stack styling - END 
 */
@@ -179,7 +191,7 @@ footer > ul {
 }
 footer > ul > li {
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 500;
     display: inline-block;
     margin: 2.4% 2%;
 }
