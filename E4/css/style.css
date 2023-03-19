@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    color: #ffffff;
+    background-color: #145f94;
+    font-size: 13pt;
+    font-weight: 500;
+    padding: 1.7%;
+}
+
+#main-body {
+    width: 83%;
+    margin: 2.2% auto;
+}
+
+.doordarshan, .sony-network, .zee-network, 
+.sun-network, .star-network {
+    border-style: solid;
+    border-color: #145f94;
+    margin: auto 0 21px 0;
+}
+
+.left-container .title {
+    background-color: #145f94;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16.5pt;
+    padding: 1.5% 3%;
+    text-align: left;
+}
+
+.right-container .title {
+    background-color: #145f94;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16.5pt;
+    text-align: left;
+    padding: 2.5% 3.5%;
+}
+
+/* Left Floating Containers */
+.left-container {
+    float: left;
+    width: 61%;
+}
+
+.left-container > div > p {
+    text-align: justify;
+    padding: 25px;
+    background-color: #f6f6f6;
+    font-size: 13pt;
+    line-height: 1.5;
+}
+
+
+/* Right Floating Containers */
+.right-container {
+    float: right;
+    width: 37.5%;
+}
+
+.right-container > div > p {
+    text-align: justify;
+    padding: 25px;
+    background-color: #f6f6f6;
+    font-size: 13pt;
+    line-height: 1.5;
+}
+
+.clear-float {
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .left-container, .right-container {
+        width: 100%;
+    }
+}
