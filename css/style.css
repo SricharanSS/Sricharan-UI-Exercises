@@ -134,14 +134,17 @@ footer > p {
     font-size: 23px;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 576px) {
+    .top-text {
+        padding: 5px;
+    }
     h1 {
         font-weight: 100;
-        font-size: 30px;
+        font-size: 70px;
     }
     #bhatt {
         margin: 0;
-        font-size: 30px;
+        font-size: 70px;
         font-weight: 700;
     }
     h3 {
@@ -168,7 +171,9 @@ footer > p {
         width: 100%;
         margin: 16px 0;
     }
-
+    .logos > img{
+        width:18%;
+    }
     .down-text {
         font-size: 15px;
     }
