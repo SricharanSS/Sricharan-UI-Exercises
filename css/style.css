@@ -105,30 +105,17 @@ nav {
 
 /* Stack Alignment Styling */
 
-.product-stack1 .product-container:first-of-type, 
-.product-stack2 .product-container:first-of-type {
+.product-container {
     margin-top: 0;
-    margin-right: 25px;
+    margin-left: 0;
+    margin-right: 50px;
 }
-.product-stack1 .product-container:nth-of-type(2), 
-.product-stack1 .product-container:nth-of-type(3),
-.product-stack2 .product-container:nth-of-type(2), 
-.product-stack2 .product-container:nth-of-type(3){
+.product-container:last-of-type {
     margin-top: 0;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 0;
+    margin-right: 0;
 }
-.product-stack1 .product-container:last-of-type, 
-.product-stack2 .product-container:last-of-type {
-    margin-left: 25px;
-    margin-top: 0;
-} 
-/* .product-container {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-*/
+
 
 /* Size Button */
 .size {
@@ -198,6 +185,9 @@ footer > ul > li {
     display: inline-block;
     margin: 2.4% 2%;
 }
+footer >ul >li:hover {
+    cursor: pointer;
+} 
 /**
     Footer Styling
  */
