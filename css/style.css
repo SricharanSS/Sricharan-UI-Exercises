@@ -1,0 +1,160 @@
+* {
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+/**
+    Body Styling - START
+*/
+body {
+    color: #ffffff;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url("../img/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/*
+    Body Styling - END
+**/
+
+
+/**
+    Nav Bar Styling - START
+*/
+.nav-tag {
+    width: 100%;
+    font-size: 2.5em;
+}
+
+.nav-tag .menu .fancy-hats{
+    text-align: center;
+    width: 90%;
+}
+
+.nav-tag .menu .fancy-hats .menu-container {
+    display: inline-block;
+}
+
+.fancy-hats {
+    text-align: center;
+}
+
+/* Menu Button */
+.menu {
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    padding: 1.8%;
+    width: fit-content;
+    background-color: #000000;
+    color: #ffffff;
+}
+/*
+    Nav Bar Styling - END
+**/
+
+/**
+    Menu Content Styling - START
+*/
+.menu-content {
+    position: absolute;
+    background-color: #000000;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    width: 270px;
+    height: 760px;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    left: -270px;
+    top: 135px;
+    transition-duration: 500ms;
+    z-index:1;
+}
+
+.menu-content ul {
+    padding-top: 5px;
+    padding-left: 0;
+}
+
+.menu-content li {
+    text-align: center;
+    display: block;
+    margin: 22px 0;  
+}
+
+.menu-content li:hover {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.menu:hover+.menu-content , .menu-content:hover{
+    left: 0;
+}
+/*
+    Menu Content Styling - END
+**/
+
+
+/**
+    Side Text Styling - START
+ */
+#side-text > p{
+    font-size: 2.5em;
+    font-weight: 600;
+    transform: rotate(270deg);
+    position: absolute;
+    right: -115px;
+    top: 170px
+}
+
+#side-text > p > span {
+    font-size: 3em;
+}
+
+/*
+    Side Text Styling - END
+ **/
+
+
+/**
+    Page Text - START
+*/
+#page-text {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 60px;
+    line-height: 0.9;
+}
+
+#page-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 7em;
+    font-weight: 600;
+}
+
+#page-text p:last-child {
+    font-size: 9.2em;
+}
+/* 
+    Page Text - END
+**/
+
+
+/**
+    Social Media Icons - START
+*/
+#social-media-icons {
+    font-size: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+/*
+    Social Media Icons - END
+**/
