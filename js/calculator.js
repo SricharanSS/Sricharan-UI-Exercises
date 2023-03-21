@@ -1,20 +1,20 @@
 
 class Calculator {
-    
-    Add(a, b) {
-        return (a+b);
+
+    Add(a,b) {
+        console.log(a+b);
     }
-    
+
     Sub(a, b) {
-        return (a-b);
+        console.log(a-b);
     }
     
     Mul(a, b) {
-        return (a*b);
+        console.log(a*b);
     }
     
     Div(a, b) {
-        return (a/b);
+        console.log(a/b);
     }
 
 }

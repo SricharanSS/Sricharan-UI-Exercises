@@ -7,6 +7,27 @@
     <title>Calculator</title>
 </head>
 <body>
+    <h2>Calculator</h2>
+    <div>
+        <form>
+            <input type="number" name="num1" />
+            <input type="number" name="num2" />
 
+            <button id="add" onclick="AddFunc()">Add</button>
+            <button id="sub">Subtract</button>
+            <button id="mul">Multiply</button>
+            <button id="div">Divide</button>
+        </form>
+    </div>
+
+    <script src="js/calculator.js">
+        let calculator = new Calculator();
+        function AddFunc() {
+            let num1 = document.getElementsByName("num1").value;
+            let num2 = document.getElementsByName("num2").value;
+
+            calculator.Add(10,2);
+        }
+    </script>
 </body>
 </html>
