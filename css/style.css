@@ -140,3 +140,43 @@ nav > h2 {
 /*
     Section-1 - END
 **/
+
+/**
+    Section-2 - START
+*/
+
+.section-2 {
+    display: none;
+    text-align: center;
+    padding: 160px;
+}
+
+.section-2 p {
+    display: none;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#section-2-input {
+    width: 715px;
+    height: 84px;
+    font-size: 80px;
+}
+
+#btn-calculate {
+    border: 1 solid;
+    background-color: #000000;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 75px;
+}
+
+/*
+    Section-2 - END
+**/
