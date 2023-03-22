@@ -18,3 +18,9 @@ class Calculator {
     }
 
 }
+
+let calculator = new Calculator();
+calculator.Add(10,2);
+calculator.Sub(10,2);
+calculator.Mul(10,2);
+calculator.Div(10,2);
