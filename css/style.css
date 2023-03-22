@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+button {
+    background-color: #000000;
+    border-style: none;
+}
+
 /**
     Nav Bar - START
 */
@@ -121,6 +126,7 @@ nav > h2 {
 }
 
 #btn-next {
+    display: none;
     border: 1 solid;
     background-color: #000000;
     color: #ffffff;
