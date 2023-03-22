@@ -55,7 +55,8 @@ nav > h2 {
 .section-1 p {
     font-family: sans-serif;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 300;
 }
 
 .shape-container {
