@@ -53,6 +53,8 @@ nav > h2 {
 */
 
 .section-1 {
+
+
     text-align: center;
     padding: 160px;
 }
@@ -109,7 +111,7 @@ nav > h2 {
     right: -40px;
 }
 
-.rectangle {
+.square {
     position: relative;
     display: inline-block;
     background-color: #E0E0E0;
@@ -117,7 +119,7 @@ nav > h2 {
     height: 160px;
     margin: 30px;
 }
-.rectangle i {
+.square i {
     display: none;
     color: #ffffff;
     position: absolute;
@@ -179,4 +181,77 @@ nav > h2 {
 
 /*
     Section-2 - END
+**/
+
+
+/**
+    Section-3 - START
+*/
+
+.section-3 {
+    display: none;
+    position: relative;
+}
+
+.section-3 .shape-container {
+    position: relative;
+}
+
+.section-3 p {
+    display: none;
+    position: absolute;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 500;
+    top:230px;
+    right: 32px;
+}
+
+.section-3 > .shape-container > div{
+    display: none;
+}
+
+table {
+    margin: auto;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    border: 0;
+    border-spacing: 0 15px;
+}
+
+tr > td:first-child {
+    padding: 13px;
+    width: 200px;
+    background-color: #0D62D6;
+}
+
+tr > td:nth-child(2) {
+    padding: 13px;
+    width: 130px;
+    background-color: #455D7E;
+}
+
+tr > td:last-child {
+    padding: 13px;
+    width: 135px;
+    background-color: #3288FF;
+}
+
+#btn-start-again {
+    position: absolute;
+    border: 1 solid;
+    background-color: #000000;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 35px;
+}
+
+/*
+    Section-3 - END
 **/
