@@ -80,8 +80,23 @@ document.getElementById("btn-next").addEventListener("click", () => {
 });
 
 
-buttonCalculate.addEventListener("click", () => {
+document.getElementById("btn-calculate").addEventListener("click", () => {
     let value = document.getElementById("section-2-input").value;
+    document.getElementsByClassName("section-2")[0].style.display = "none";
+    document.getElementsByClassName("section-3")[0].style.display = "block";
+
+    if(circleTick.style.display == "inline-block") {
+        document.getElementById("section-3-circle").style.display = "inline-block";
+        document.getElementById("title").innerHTML = "Circle";
+    }
+    else if(triangleTick.style.display == "inline-block") {
+        document.getElementById("section-3-triangle").style.display = "inline-block";
+        document.getElementById("title").innerHTML = "Triangle";
+    }
+    else if(squareTick.style.display == "inline-block"){
+        document.getElementById("section-3-square").style.display = "inline-block";
+        document.getElementById("title").innerHTML = "Square";
+    }
 
 });
 
