@@ -80,6 +80,9 @@ nav {
     height: 535px;
     width: 22%;
     text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 50px;
 }
 
 /* Product Image Styling */
@@ -105,11 +108,7 @@ nav {
 
 /* Stack Alignment Styling */
 
-.product-container {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 50px;
-}
+
 .product-container:last-of-type {
     margin-top: 0;
     margin-left: 0;
