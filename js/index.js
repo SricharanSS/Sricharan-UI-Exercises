@@ -18,12 +18,6 @@ $( function() {
     },
     {
       "country": "United States",
-      "state": "Arizona",
-      "city": "Scottsdale",
-      "contact": "602-383-3500"
-    },
-    {
-      "country": "United States",
       "state": "California",
       "city": "Irvine",
       "contact": "949-777-0400"
