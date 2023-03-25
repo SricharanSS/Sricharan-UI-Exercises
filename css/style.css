@@ -184,7 +184,7 @@ footer > div > p {
 **/
 
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
     nav {
         padding: 3%;
     }
@@ -192,16 +192,20 @@ footer > div > p {
         display: none;
     }
     .main-container {
+        text-align: center;
         padding: 18% 3% 3%;
-        width: 100%;
+        width: 95%;
         display: block;
+        margin: auto;
     }
 
     .content-container, .comments-container {
+        text-align: left;
         padding: 0;
-        width: 95%;
+        width: 100%;
     }
     .project-container {
+        text-align: left;
         width: 100%;
     }
     #mobile-hr {
