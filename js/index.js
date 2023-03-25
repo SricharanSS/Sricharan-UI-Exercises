@@ -75,3 +75,8 @@ document.getElementById("highlight-title").innerHTML = "<h2>"+content.title+"</h
 
 /* Load Highlight's Description */
 document.getElementById("highlight-description").innerHTML = "<p>"+content.description+"</p>";
+
+
+/* */ 
+const commentsList = content.comments;
+commentsList.
