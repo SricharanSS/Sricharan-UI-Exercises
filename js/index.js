@@ -66,17 +66,21 @@ for(const element of postersList) {
 /* Load Video in Highlight */
 const videoContainer = document.getElementById("video-container");
 
-videoContainer.innerHTML += "<video width='870 height='385' controls>";
+videoContainer.innerHTML += "<video width='100%' height='100%' controls>";
 videoContainer.innerHTML += "<source src=' "+content.videoUrl+" ' type='video/mp4' >";
 videoContainer.innerHTML += "</video>";
 
 /* Load Highlight's Title */
-document.getElementById("highlight-title").innerHTML = "<h2>"+content.title+"</h2>";
+document.getElementById("highlight-title").innerHTML = "<p>"+content.title+"</p>";
 
 /* Load Highlight's Description */
 document.getElementById("highlight-description").innerHTML = "<p>"+content.description+"</p>";
 
 
-/* */ 
+/* Load Comments */
+const commentContainer = document.getElementById("comments"); 
 const commentsList = content.comments;
-commentsList.
+
+for(const element of commentsList) {
+    commentContainer.innerHTML += "<div> <div><img class='comment-img' src=' "+element.image+" ' alt=' "+element.name+" '></div> <div> <p id='commenter' >"+element.name+"</p> <p>"+element.comment+"</p> </div> </div>";
+}
