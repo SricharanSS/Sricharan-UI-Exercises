@@ -14,12 +14,12 @@ body {
 
 #chat-container {
     position: fixed;
-    bottom: 40px;
-    right: 35px;
+    bottom: 4%;
+    right: 4%;
     font-size: 25px;
     color: #FFFFFF;
-    height: 45px;
-    width: 45px;
+    height: 65px;
+    width: 65px;
     background-color: #C432AE;
     border-radius: 50%;
     display: flex;
