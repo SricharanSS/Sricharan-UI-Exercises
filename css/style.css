@@ -104,7 +104,7 @@ h3 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .logos > img {
     margin: auto 50px;
@@ -152,25 +152,33 @@ footer > p {
     font-size: 23px;
 }
 
-@media only screen and (max-width: 576px) {
+/**
+    Mobile Responsive Code - START
+*/
+@media only screen and (max-width: 575px) {
+    body {
+        margin: auto;
+    }
     .top-text {
         padding: 5px;
+        margin: 65px auto 90px;
     }
     h1 {
         font-weight: 100;
-        font-size: 70px;
+        font-size: 95px;
+        margin: auto auto;
     }
     #bhatt {
         margin: 0;
-        font-size: 70px;
+        font-size: 95px;
         font-weight: 700;
     }
     h3 {
-        font-size: 15px;
+        font-size: 40px;
     }
     #product {
         margin: 0;
-        font-size: 15px;
+        font-size: 40px;
         color: #4a90e2;
     }
     .mail-container {
@@ -180,28 +188,57 @@ footer > p {
         display: block;
     }
     .mail-container-mobile p {
-        font-size: 7px;
+        font-size: 20px;
     }
     .image-container {
         display: block;
+        width: 100%;
+        margin: auto;
     }
     .image-container img {
         width: 100%;
         margin: 16px 0;
     }
+    .logos {
+        gap: 60px;
+    }
     .logos > img{
         width:18%;
     }
+    #adidas {
+        width: 12%;
+    }
     .down-text {
-        font-size: 15px;
-        margin-top: 89px;
+        font-size: 40px;
+        margin: 70px auto;
         padding: 0px;
     }
     #show-off {
-        font-size: 15px;
+        font-size: 40px;
     }
 
-    .logo img {
-        margin: 30px auto;
+    .hr {
+        margin: 150px auto 45px;
+    }
+
+    .social-media-icons {
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        padding: auto;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icons i {
+        font-size: 30px;
+        margin: auto 15px;
+        padding-top: 2%;
+    }
+
+    footer {
+        margin: 50px auto 80px;
     }
 }
+/*
+    Mobile Responsive Code - END
+**/
