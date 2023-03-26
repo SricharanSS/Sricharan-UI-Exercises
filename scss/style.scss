@@ -1,0 +1,108 @@
+$White : #ffffff;
+$bodyBackground : #000000;
+$buttonColor1 : #B355B7;
+$buttonColor2 : #A80000;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #041D2E;
+    color: $White;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    #title {
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'IBM Plex Sans', sans-serif;
+        span {
+            font-weight: 600;
+        }
+    }
+    div {
+        margin: 25px 35px;
+        button {
+            color: $White;
+            font-size: 17px;
+            padding: 12px 35px;
+            border-radius: 25px;
+            border-style: none;
+        }
+        #delete-btn {
+            background-color: $buttonColor2;
+            margin-right: 14px;
+        }
+        #new-btn {
+            background-color: $buttonColor1;
+        }
+    }
+}
+
+body {
+    background-color: $bodyBackground;
+    font-family: 'Lato', sans-serif;
+
+
+
+    #no-notes-container {
+        display: none;
+        margin: 200px auto;
+        text-align: center;
+        i {
+            font-size: 300px;
+            color: #ffffff;
+            margin: 25px;
+        }
+        p {
+            color: gray;
+            font-size: 30px;
+        }
+    }
+
+    #load-more-container {
+        // display: none;
+        position: relative;
+        text-align: center;
+        margin: 30px auto auto;
+        width: 100%;
+        button {
+            cursor: pointer;
+            color: $White;
+            font-size: 17px;
+            padding: 16px 30px;
+            border-radius: 25px;
+            border-style: none;
+        }
+        #load-more-btn {
+            position: absolute;
+            bottom: 60px;
+            left: 45%;
+            background-color: $buttonColor1;
+        }
+    }
+    #main-container {
+        color: $White;
+        padding: 135px 10.5%;
+        #note-container {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3vh 2.5%;
+            // background-color: pink;
+        }
+        .note {
+            width: 23%;
+            height: 416px;
+            overflow: hidden;
+            padding: 25px 20px;
+            background-color: #FFA78C;
+            border-radius: 5px;
+        }
+    }
+}

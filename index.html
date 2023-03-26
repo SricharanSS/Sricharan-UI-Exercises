@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Pocket Notes</title>
+</head>
+<body>
+    <!-- Nav Bar - START -->
+    <nav>
+        <div id="title">
+            <p>Pocket <span>Notes</span></p>
+        </div>
+
+        <div id="btn-container">
+            <button id="delete-btn">DELETE ALL</button>
+            <button id="new-btn">NEW</button>
+        </div>
+    </nav>
+    <!-- Nav Bar - END -->
+
+    <!-- No Notes Container - START -->
+    <div id="no-notes-container">
+        <i class="fa-solid fa-cube"></i>
+        <p>Notes you add appear here</p>
+    </div>
+    <!-- No Notes Container - END -->
+
+    <!-- Main Container - START -->
+    <div id="main-container">
+        <div id="note-container">
+
+        </div>
+    </div>
+    <!-- Main Container - END -->
+
+    <div id="load-more-container">
+        <!-- Load More Button -->
+        <button id="load-more-btn" type="button">LOAD MORE</button>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

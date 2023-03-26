@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #041D2E;
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+nav #title {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+nav #title span {
+  font-weight: 600;
+}
+nav div {
+  margin: 25px 35px;
+}
+nav div button {
+  color: #ffffff;
+  font-size: 17px;
+  padding: 12px 35px;
+  border-radius: 25px;
+  border-style: none;
+}
+nav div #delete-btn {
+  background-color: #A80000;
+  margin-right: 14px;
+}
+nav div #new-btn {
+  background-color: #B355B7;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Lato", sans-serif;
+}
+body #no-notes-container {
+  display: none;
+  margin: 200px auto;
+  text-align: center;
+}
+body #no-notes-container i {
+  font-size: 300px;
+  color: #ffffff;
+  margin: 25px;
+}
+body #no-notes-container p {
+  color: gray;
+  font-size: 30px;
+}
+body #load-more-container {
+  position: relative;
+  text-align: center;
+  margin: 30px auto auto;
+  width: 100%;
+}
+body #load-more-container button {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 16px 30px;
+  border-radius: 25px;
+  border-style: none;
+}
+body #load-more-container #load-more-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 45%;
+  background-color: #B355B7;
+}
+body #main-container {
+  color: #ffffff;
+  padding: 135px 10.5%;
+}
+body #main-container #note-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vh 2.5%;
+}
+body #main-container .note {
+  width: 23%;
+  height: 416px;
+  overflow: hidden;
+  padding: 25px 20px;
+  background-color: #FFA78C;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
