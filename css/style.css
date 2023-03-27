@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+}
+
+/**
+    Chat Icon - START
+*/
+
+#chat-container {
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    font-size: 25px;
+    color: #FFFFFF;
+    height: 65px;
+    width: 65px;
+    background-color: #C432AE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+#chat-container i {
+    margin: auto;
+}
+
+/*
+    Chat Icon - END
+**/
+
+/**
+    Nav Bar - START
+*/
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 12px 16%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    box-shadow: 10px 0 6px 2.5px #7070703C;
+}
+
+nav > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile > p {
+    display: inline-block;
+    font-size: 10px;
+}
+
+#profile-pic {
+    margin: 7px;
+    width: 28px;
+    border-radius: 50%;
+}
+
+/*
+    Nav Bar - END
+**/
+
+
+
+/**
+    Page Structure Styling - START
+*/
+
+.main-container {
+    padding: 90px 16%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container {
+    width: 73%;
+}
+
+.project-container {
+    width: 24.5%;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#posters > img {
+    width: 100%;
+    margin: 6px auto;
+}
+
+/*
+    Page Structure Styling - END
+**/
+
+
+
+/**
+    Highlight Section - START
+*/
+
+#highlight-title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px auto 10px;
+}
+
+#highlight-description {
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 1.6;
+    margin: 10px auto;
+}
+
+hr {
+    background-color: #7070703C;
+    margin: 20px auto;
+}
+
+/*
+    Highlight Section - END
+**/
+
+
+
+/**
+    Comments Section Styling - START
+*/
+
+.comments-container > p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#comments > div {
+    display: flex;
+    margin: 20px auto;
+    align-items: start;
+}
+
+#comments > div > div {
+    margin: 0 6px;
+}
+
+#comments > div > div > p:last-child {
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.comments-container > p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.comment-img {
+    width: 46px;
+    border-radius: 50%;
+}
+
+#commenter {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#mobile-hr {
+    display: none;
+}
+
+/*
+    Comments Section Styling - END
+**/
+
+/** 
+    Footer Styling - START
+*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 25px 16%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer > div > p {
+    display: inline;
+    margin: auto 3px;
+}
+/*
+    Footer Styling - END
+**/
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        padding: 3%;
+    }
+    .profile > p {
+        display: none;
+    }
+    .main-container {
+        text-align: center;
+        padding: 18% 3% 3%;
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+
+    .content-container, .comments-container {
+        text-align: left;
+        padding: 0;
+        width: 100%;
+    }
+    .project-container {
+        text-align: left;
+        width: 100%;
+    }
+    #mobile-hr {
+        width: 100%;
+        display: block;
+        background-color: #818EB9;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    footer > p {
+        font-size: 22px;
+    }
+
+}
