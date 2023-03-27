@@ -124,7 +124,7 @@ function LoadNotes() {
     let count = 0;
     while(count < 10 && !(index === notes.length)) {
         flag = 1;
-        notesContainer.innerHTML += "<div class='note'> <h2>"+notes[index].title+"</h2> <p class='date' >"+notes[index].date+"</p> <p class='content' > "+notes[index].content+"</p> </div>";
+        notesContainer.innerHTML += "<div id='"+notes[index].title+"' class='note'> <h2>"+notes[index].title+"</h2> <p class='date' >"+notes[index].date+"</p> <p class='content' > "+notes[index].content+"</p> </div>";
         index++;
         count++;
     }
@@ -133,7 +133,6 @@ function LoadNotes() {
         loadMoreBtn.style.display = "none";
     }
 }
-
 $(document).ready(LoadNotes());
 notes.push( { 'title': 'title23', 'date': 'Jan 02, 2023', 'content': 'New Content' } );
 
