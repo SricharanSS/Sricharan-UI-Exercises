@@ -114,17 +114,32 @@ const notes = [
 
 const notesContainer = document.getElementById("note-container");
 
+const noteDisplay = document.getElementById("note-display");
+
+const backbtn = document.getElementById("back-btn");
+
+/* Load More Button */ 
 const loadMoreBtn = document.getElementById("load-more-btn");
-loadMoreBtn.addEventListener('click', LoadNotes);
+loadMoreBtn.addEventListener('click', function() {
+    LoadNotes();
+    for(let i=0; i<notes.length; i++) {
+        $("#note-"+i).on("click",function() {
+            alert("Note-"+i+" Clicked ");
+            notesContainer.style.display = "none";
+            backbtn.style.display = "inline-block";
+            noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
+        });
+    }
+});
 
 /* Load Notes */ 
 let index = 0;
 let flag = 0;
 function LoadNotes() {
     let count = 0;
-    while(count < 10 && !(index === notes.length)) {
+    while(count < 10 && (index !== notes.length)) {
         flag = 1;
-        notesContainer.innerHTML += "<a href=''><div id='"+notes[index].title+"' class='note'> <h2>"+notes[index].title+"</h2> <p class='date' >"+notes[index].date+"</p> <p class='content' > "+notes[index].content+"</p> </div> </a>";
+        notesContainer.innerHTML += "<div id='note-"+index+"' class='note'> <h2>"+notes[index].title+"</h2> <p class='date' >"+notes[index].date+"</p> <p class='content' > "+notes[index].content+"</p> </div>";
         index++;
         count++;
     }
@@ -133,8 +148,26 @@ function LoadNotes() {
         loadMoreBtn.style.display = "none";
     }
 }
-$(document).ready(LoadNotes());
+
+$("#back-btn").on("click",function() {
+    noteDisplay.innerHTML = "";
+    backbtn.style.display = "none";
+    notesContainer.style.display = "flex";
+});
+
+$(document).ready(()=> {
+    LoadNotes();
+    for(let i=0; i<notes.length; i++) {
+        $("#note-"+i).on("click",function() {
+            alert("Note-"+i+" Clicked ");
+            notesContainer.style.display = "none";
+            backbtn.style.display = "inline-block";
+            noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
+        });
+    }
+});
 notes.push( { 'title': 'title23', 'date': 'Jan 02, 2023', 'content': 'New Content' } );
+
 
 
 

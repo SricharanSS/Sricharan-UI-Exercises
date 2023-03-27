@@ -20,12 +20,18 @@ nav {
         font-size: 25px;
         font-weight: 400;
         font-family: 'IBM Plex Sans', sans-serif;
+        display: flex;
+        align-items: center;
         span {
             font-weight: 600;
         }
     }
+    #back-btn {
+        cursor: pointer;
+        display: none;
+    }
     div {
-        margin: 25px 35px;
+        margin: 20px 30px;
         button {
             color: $White;
             font-size: 17px;
@@ -107,6 +113,14 @@ body {
             padding: 25px 20px;
             background-color: #FFA78C;
             border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #note-display {
+            // display: none;
+            color: $White;
+            width: 100%;
+            background-color: pink;
         }
     }
 }

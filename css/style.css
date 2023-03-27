@@ -17,12 +17,18 @@ nav #title {
   font-size: 25px;
   font-weight: 400;
   font-family: "IBM Plex Sans", sans-serif;
+  display: flex;
+  align-items: center;
 }
 nav #title span {
   font-weight: 600;
 }
+nav #back-btn {
+  cursor: pointer;
+  display: none;
+}
 nav div {
-  margin: 25px 35px;
+  margin: 20px 30px;
 }
 nav div button {
   color: #ffffff;
@@ -99,6 +105,12 @@ body #main-container .note {
   padding: 25px 20px;
   background-color: #FFA78C;
   border-radius: 5px;
+  cursor: pointer;
+}
+body #main-container #note-display {
+  color: #ffffff;
+  width: 100%;
+  background-color: pink;
 }
 
 /*# sourceMappingURL=style.css.map */
