@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="img/Sirius_CDW_Cobranded_PMS2747.svg" alt="Sirius CDW" />
+    </div>
+
+    <div class="form-container">
+        <form>
+            <h2>BILLING DETAILS</h2>
+
+            <div class="small-input-container">
+            <div class="small-input">
+                <p>First Name</p>
+                <input type="text" name="first-name" id="first-name" />
+                <p id="first-name-error"></p>
+            </div>
+
+            <div class="small-input">
+                <p>Last Name</p>
+                <input type="text" name="last-name" id="last-name" />
+                <p id="last-name-error"></p>
+            </div>
+            </div>
+
+            <div class="big-input">
+                <p>Email Address</p>
+                <input type="email" name="email" id="email" />
+                <p id="email-error"></p>
+            </div>
+
+            <div class="big-input">
+                <p>Contact Number</p>
+                <input type="tel" name="contact-number" id="contact-number" />
+                <p id="contact-number-error"></p>
+            </div>
+
+            <div class="big-input">
+                <p>PIN Code</p>
+                <input type="number" name="pin-code" id="pin-code" />
+                <p id="pin-code-error"></p>
+            </div>
+
+            <h2>PAYMENT DETAILS</h2>
+            <div class="big-input">
+                <p>Card Number</p>
+                <input type="number" name="card-number" id="card-number" />
+                <p id="card-number-error"></p>
+            </div>
+
+            <div class="small-input-container">
+            <div class="small-input">
+                <p>Card Expiry(Year)</p>
+                <input type="number" name="card-expiry" id="card-expiry" />
+                <p id="card-expiry-error"></p>
+            </div>
+
+            <div class="small-input">
+                <p>CVV</p>
+                <input type="number" name="cvv" id="cvv" />
+                <p id="cvv-error"></p>
+            </div>
+            </div>
+            
+            <input type="submit" id="btn-submit" value="COMPLETE PAYMENT" />
+
+        </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
