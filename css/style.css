@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #000000;
+    border-style: none;
+}
+
+/**
+    Nav Bar - START
+*/
+nav {
+    width: 100%;
+    background-color: #A9E087;
+    padding: 24px 30px;
+}
+
+nav > h1 {
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+nav > h2 {
+    font-size: 20px;
+    font-weight: 600;
+    float: right;
+}
+
+.clear-fix {
+    clear: both;
+}
+/*
+    Nav Bar - END
+**/
+.main-display {
+    width: 1040px;
+    height: 670px;
+    /* background-color: purple; */
+    margin: 100px auto;
+}
+
+
+/**
+    Section-1 - START
+*/
+
+.section-1 {
+
+
+    text-align: center;
+    padding: 160px;
+}
+
+.section-1 p {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.shape-container {
+    width: fit-content;
+    margin: 80px auto 65px;
+    display: flex;
+}
+
+.shape-container i {
+    font-size: 80px;
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    background-color: #00987D;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin: 30px;
+}
+.circle i {
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.triangle {
+    position: relative;
+    display: inline-block;
+    width: 0;
+	height: 0;
+	border-left: 90px solid transparent;
+	border-right: 90px solid transparent;
+	border-bottom: 162px solid #FFABDC;
+    margin: 30px;
+}
+.triangle i {
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: -40px;
+}
+
+.square {
+    position: relative;
+    display: inline-block;
+    background-color: #E0E0E0;
+    width: 160px;
+    height: 160px;
+    margin: 30px;
+}
+.square i {
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+#btn-next {
+    display: none;
+    border: 1 solid;
+    background-color: #000000;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 75px;
+}
+/*
+    Section-1 - END
+**/
+
+/**
+    Section-2 - START
+*/
+
+.section-2 {
+    display: none;
+    text-align: center;
+    padding: 160px;
+}
+
+.section-2 p {
+    display: none;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#section-2-input {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #000000;
+    width: 715px;
+    height: 84px;
+    font-size: 80px;
+    margin: 54px auto 52px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#btn-calculate {
+    border: 1 solid;
+    background-color: #000000;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+/*
+    Section-2 - END
+**/
+
+
+/**
+    Section-3 - START
+*/
+
+.section-3 {
+    display: none;
+    position: relative;
+    margin: 150px auto;
+}
+
+.section-3 .shape-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.section-3 p {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 33px auto auto;
+}
+
+.section-3 > .shape-container > div{
+    display: none;
+    margin: auto;
+}
+
+table {
+    margin: auto auto 60px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    border: 0;
+    border-spacing: 0 15px;
+}
+
+tr > td:first-child {
+    padding: 13px;
+    width: 200px;
+    background-color: #0D62D6;
+}
+
+tr > td:nth-child(2) {
+    padding: 13px;
+    width: 130px;
+    background-color: #455D7E;
+}
+
+tr > td:last-child {
+    padding: 13px;
+    width: 135px;
+    background-color: #3288FF;
+}
+
+#btn-start-again {
+    position: absolute;
+    border: 1 solid;
+    background-color: #000000;
+    color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 35px;
+    left: 400px;
+}
+
+/*
+    Section-3 - END
+**/
