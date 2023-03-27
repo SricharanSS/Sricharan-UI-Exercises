@@ -95,6 +95,10 @@ body {
             flex-wrap: wrap;
             gap: 3vh 2.5%;
             // background-color: pink;
+            a {
+                color: inherit;
+                display: contents;
+            }
         }
         .note {
             width: 23%;

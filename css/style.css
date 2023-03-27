@@ -88,6 +88,10 @@ body #main-container #note-container {
   flex-wrap: wrap;
   gap: 3vh 2.5%;
 }
+body #main-container #note-container a {
+  color: inherit;
+  display: contents;
+}
 body #main-container .note {
   width: 23%;
   height: 416px;
