@@ -1,0 +1,220 @@
+* {
+  font-size: 20pt;
+  margin: auto 5.4%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.mail-container {
+  margin: 0;
+  padding: 65px 85px;
+}
+.mail-container > p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  float: right;
+  text-align: right;
+}
+
+.mail-container-mobile {
+  display: none;
+}
+
+.top-text {
+  text-align: center;
+  padding: 80px;
+  margin: auto auto 65px auto;
+}
+
+h1 {
+  font-size: 6.5em;
+  font-weight: 200;
+}
+
+#bhatt {
+  margin: 0;
+  font-size: 6.5rem;
+  font-weight: 900;
+}
+
+h3 {
+  padding: 8px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #cecece;
+}
+
+#product {
+  margin: 0;
+  font-size: 2rem;
+  color: #4a90e2;
+}
+
+.image-container {
+  margin: 30px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.image-container > img {
+  margin: 16px;
+  width: 31%;
+}
+
+.down-text {
+  text-align: center;
+  padding: 80px;
+  margin: 58px auto 25px auto;
+}
+
+#show-off {
+  margin: 0;
+  font-size: 2rem;
+  color: #b8e986;
+}
+
+.logos {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.logos > img {
+  margin: auto 50px;
+  width: 9.5%;
+}
+
+#adidas {
+  width: 7%;
+}
+
+.hr {
+  margin-top: 280px;
+  margin-bottom: 105px;
+  text-align: center;
+}
+
+#small-hr {
+  display: inline-block;
+  margin-right: 35px;
+  width: 40px;
+}
+
+#big-hr {
+  margin-left: 0;
+  width: 267px;
+  display: inline-block;
+}
+
+.social-media-icons {
+  text-align: center;
+}
+.social-media-icons > i {
+  margin: auto 7px;
+  border: 1px solid;
+  padding: 1%;
+  width: 53px;
+  height: 53px;
+  border-color: #ffffff;
+  border-radius: 50%;
+}
+
+footer {
+  margin-top: 85px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+footer > p {
+  font-size: 23px;
+}
+
+@media only screen and (max-width: 575px) {
+  body {
+    margin: auto;
+  }
+  .top-text {
+    padding: 5px;
+    margin: 65px auto 90px;
+  }
+  h1 {
+    font-weight: 100;
+    font-size: 95px;
+    margin: auto auto;
+  }
+  #bhatt {
+    margin: 0;
+    font-size: 95px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  #product {
+    margin: 0;
+    font-size: 40px;
+    color: #4a90e2;
+  }
+  .mail-container {
+    display: none;
+  }
+  .mail-container-mobile {
+    display: block;
+  }
+  .mail-container-mobile p {
+    font-size: 20px;
+  }
+  .image-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .image-container img {
+    width: 100%;
+    margin: 16px 0;
+  }
+  .logos {
+    gap: 60px;
+  }
+  .logos > img {
+    width: 18%;
+  }
+  #adidas {
+    width: 12%;
+  }
+  .down-text {
+    font-size: 40px;
+    margin: 70px auto;
+    padding: 0px;
+  }
+  #show-off {
+    font-size: 40px;
+  }
+  .hr {
+    margin: 150px auto 45px;
+  }
+  .social-media-icons {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    padding: auto;
+    justify-content: space-evenly;
+  }
+  .social-media-icons i {
+    font-size: 30px;
+    margin: auto 15px;
+    padding-top: 2%;
+  }
+  footer {
+    margin: 50px auto 80px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
