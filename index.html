@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"/>
+    <title>Bank Application</title>
+</head>
+<body>
+    <button id="btn-atm">Withdraw Amount</button>
+    <button id="btn-cdm">Deposit Amount</button>
+
+    <div id="atm-container">
+        <table>
+            <tr>
+                <td>Card Number</td>
+                <td>
+                    <input type="number" name="card-no" id="atm-card-no" />
+                </td>
+            </tr>
+            <tr>
+                <td>PIN</td>
+                <td>
+                    <input type="number" name="pin" id="atm-pin" />
+                </td>
+            </tr>
+            <tr>
+                <td>Amount to Withdraw</td>
+                <td>
+                    <input type="number" name="amount" id="atm-amount" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" id="btn-atm-submit" value="SUBMIT"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="cdm-container">
+        <table>
+            <tr>
+                <td>Card Number</td>
+                <td>
+                    <input type="number" name="card-no" id="cdm-card-no" />
+                </td>
+            </tr>
+            <tr>
+                <td>PIN</td>
+                <td>
+                    <input type="number" name="pin" id="cdm-pin" />
+                </td>
+            </tr>
+            <tr>
+                <td>Amount to Deposit</td>
+                <td>
+                    <input type="number" name="amount" id="cdm-amount" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" id="btn-cdm-submit" value="SUBMIT"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
