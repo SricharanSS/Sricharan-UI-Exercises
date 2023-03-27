@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #ffffff;
+    background-color: #2a2b30;
+    font-family: 'Roboto', sans-serif;
+}
+
+/** 
+    Nav Bar and Header  - START
+*/
+nav {
+    padding: 75px 0 55px;
+    position: relative;
+}
+#logo-img {
+    width: 13%;
+}
+
+/* Drop Down Menu */
+.dropdown {
+    display: inline;
+    position: absolute;
+    right: 0;
+    padding-bottom: 22px;
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+}
+.dropdown-content {
+    display: none;
+    color: #000;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    margin-top: 20px;
+}
+.dropdown-content ul {
+    background-color: #eee;
+    height: 194px;
+    width: 260px;
+    padding: 12px 0;
+}
+.dropdown-content li {
+    font-weight: 600;
+    background-color: #eee;
+    padding: 12px 25px;
+    list-style: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+/** 
+    Nav Bar and Header - END 
+*/
+
+.main-content {
+    margin: 0 8.5%;
+}
+
+
+/** 
+    Product stack styling - START 
+*/
+.product-stack1 {
+    margin-bottom: 50px;
+}
+.product-stack2 {
+    margin-bottom: 140px;
+}
+.product-container {
+    display: inline-block;
+    height: 535px;
+    width: 22%;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 50px;
+}
+
+/* Product Image Styling */
+.product-image {
+    position: relative;
+    padding-top: 85px;
+    height: 410px;
+    background-color: #24252a;
+}
+.product-image img {
+    height: 235px;
+}
+.product-image i {
+    color: #85ae80;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.3em;
+}
+.product-image i:hover {
+    cursor: pointer;
+}
+
+/* Stack Alignment Styling */
+
+
+.product-container:last-of-type {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Size Button */
+.size {
+    color: #111111;
+    font-size: 1.45em;
+    background-color: #85ae80;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 5%;
+    font-weight: 800;
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+}
+
+/* Product description (Name, Price & ADD TO CART button) */
+.description {
+    margin-top: 15px;
+    text-align: left;
+    background-color: #2a2b30;
+}
+.description h4 {
+    font-size: 1.5em;
+    font-weight: 350;
+}
+.description p {
+    color: #959696;
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.description button {
+    font-size: 1.01em;
+    color: #959696;
+    border-style: solid;
+    padding: 10px 20px;
+    background-color: #2a2b30;
+}
+.description button:hover {
+    cursor: pointer;
+    color: #111111;
+    background-color: #85ae80;
+}
+/**
+    Product stack styling - END 
+*/
+
+
+/** 
+    Footer Styling 
+*/
+footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+    position: fixed;
+    bottom: 0;
+}
+footer > ul {
+    text-align: center;
+}
+footer > ul > li {
+    font-size: 1.5em;
+    font-weight: 500;
+    display: inline-block;
+    margin: 2.4% 2%;
+}
+footer >ul >li:hover {
+    cursor: pointer;
+} 
+/**
+    Footer Styling
+ */
