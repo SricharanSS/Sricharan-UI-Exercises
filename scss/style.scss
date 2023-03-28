@@ -40,8 +40,17 @@ nav {
             border-style: none;
         }
         #delete-btn {
+            display: none;
             background-color: $buttonColor2;
             margin-right: 14px;
+        }
+        #delete-all-btn {
+            background-color: $buttonColor2;
+            margin-right: 14px;
+        }
+        #edit-btn {
+            display: none;
+            background-color: $buttonColor1;
         }
         #new-btn {
             background-color: $buttonColor1;
@@ -91,6 +100,16 @@ body {
             background-color: $buttonColor1;
         }
     }
+    .modal {
+        color: $White;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 35%;
+        height: 100vh;
+        z-index: 2;
+        background-color: $bodyBackground;
+    }
     #main-container {
         color: $White;
         padding: 135px 10.5%;
@@ -119,8 +138,22 @@ body {
         #note-display {
             // display: none;
             color: $White;
-            width: 100%;
+            width: 57%;
+            margin: auto;
             background-color: pink;
+
+            div {
+                h2 {
+                    font-size: 60px;
+                }
+                .date {
+                    font-size: 15px;
+                }
+                .content {
+                    font-size: 20px;
+                    padding: 15px 30px;
+                }
+            }
         }
     }
 }

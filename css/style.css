@@ -38,8 +38,17 @@ nav div button {
   border-style: none;
 }
 nav div #delete-btn {
+  display: none;
   background-color: #A80000;
   margin-right: 14px;
+}
+nav div #delete-all-btn {
+  background-color: #A80000;
+  margin-right: 14px;
+}
+nav div #edit-btn {
+  display: none;
+  background-color: #B355B7;
 }
 nav div #new-btn {
   background-color: #B355B7;
@@ -83,6 +92,16 @@ body #load-more-container #load-more-btn {
   left: 45%;
   background-color: #B355B7;
 }
+body .modal {
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 100vh;
+  z-index: 2;
+  background-color: #000000;
+}
 body #main-container {
   color: #ffffff;
   padding: 135px 10.5%;
@@ -109,8 +128,19 @@ body #main-container .note {
 }
 body #main-container #note-display {
   color: #ffffff;
-  width: 100%;
+  width: 57%;
+  margin: auto;
   background-color: pink;
+}
+body #main-container #note-display div h2 {
+  font-size: 60px;
+}
+body #main-container #note-display div .date {
+  font-size: 15px;
+}
+body #main-container #note-display div .content {
+  font-size: 20px;
+  padding: 15px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

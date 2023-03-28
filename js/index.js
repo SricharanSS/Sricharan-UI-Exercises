@@ -118,15 +118,29 @@ const noteDisplay = document.getElementById("note-display");
 
 const backbtn = document.getElementById("back-btn");
 
-/* Load More Button */ 
 const loadMoreBtn = document.getElementById("load-more-btn");
+
+
+const deleteBtn = document.getElementById("delete-btn");
+const deleteAllBtn = document.getElementById("delete-all-btn");
+const editBtn = document.getElementById("edit-btn");
+const newBtn = document.getElementById("new-btn");
+
+
+/* Load More Button Functionality */ 
 loadMoreBtn.addEventListener('click', function() {
     LoadNotes();
     for(let i=0; i<notes.length; i++) {
         $("#note-"+i).on("click",function() {
-            alert("Note-"+i+" Clicked ");
             notesContainer.style.display = "none";
             backbtn.style.display = "inline-block";
+            loadMoreBtn.style.display = "none";
+
+            deleteAllBtn.style.display = "none";
+            newBtn.style.display = "none";
+            deleteBtn.style.display = "inline-block";
+            editBtn.style.display = "inline-block";
+
             noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
         });
     }
@@ -152,16 +166,30 @@ function LoadNotes() {
 $("#back-btn").on("click",function() {
     noteDisplay.innerHTML = "";
     backbtn.style.display = "none";
+    loadMoreBtn.style.display = "initial";
     notesContainer.style.display = "flex";
+
+    deleteAllBtn.style.display = "initial";
+    newBtn.style.display = "initial";
+    deleteBtn.style.display = "none";
+    editBtn.style.display = "none";
+
 });
 
 $(document).ready(()=> {
     LoadNotes();
     for(let i=0; i<notes.length; i++) {
         $("#note-"+i).on("click",function() {
-            alert("Note-"+i+" Clicked ");
             notesContainer.style.display = "none";
             backbtn.style.display = "inline-block";
+            loadMoreBtn.style.display = "none";
+
+            deleteAllBtn.style.display = "none";
+            newBtn.style.display = "none";
+            deleteBtn.style.display = "inline-block";
+            editBtn.style.display = "inline-block";
+
+
             noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
         });
     }
