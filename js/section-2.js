@@ -1,14 +1,16 @@
 // Insert 11 players
 playerList = ["Sricharan","Hari Haran", "Vasanth", "Poorna", "James", "Mukund", "Gokul", "Abdul", "Hari Booba", "Charan Raj", "Kumeresh"];
+console.log(playerList);
 
 // Remove First player
-playerList.shift();
+console.log(playerList.shift());
 
 // No. of players
-playerList.length;
+console.log(playerList.length);
 
 // Push new Player
 playerList.push("Nachiappan");
+console.log(playerList);
 
 // Sort player list
 playerList.sort();

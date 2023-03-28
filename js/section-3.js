@@ -47,5 +47,5 @@ console.log(convertToFahrenheit(40));
 let arr = [1,2,3,4,5];
 console.log(getAVG(arr));
 
-str = "sricharan";
+let str = "sricharan";
 console.log(reverseString(str));
