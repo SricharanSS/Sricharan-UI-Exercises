@@ -21,8 +21,8 @@ function convertToFahrenheit(celcius) {
 // Returns average of an Array
 function getAVG(arr) {
     let sum = 0;
-    for(let i=0; i<arr.length; i++) {
-        sum += arr[i];
+    for(const element of arr) {
+        sum += element;
     }
 
     return (sum/arr.length);
@@ -30,7 +30,7 @@ function getAVG(arr) {
 
 // Reverse a String
 function reverseString(str) {
-    revstr = str.split("");
+    let revstr = str.split("");
     revstr.reverse();
     return revstr.toString().replaceAll(",","");
 }
