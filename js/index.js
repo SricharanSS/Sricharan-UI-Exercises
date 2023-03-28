@@ -3,7 +3,7 @@ $.getJSON('https://mocki.io/v1/8c9b378b-d248-4203-93b0-b8e7659ac346', function(d
     // JSON result in `data` variable\
     const posterContainer = document.getElementById("posters");
     for(const element of data) {
-        posterContainer.innerHTML += "<img src=' "+element.imageUrl+" ' alt=' "+element.title+" ' />";
+        posterContainer.innerHTML += "<img src='"+element.imageUrl+"' alt=' "+element.title+" ' />";
     }
 });
 
