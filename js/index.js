@@ -46,12 +46,12 @@ document.getElementById("btn-cdm").addEventListener("click", () => {
 document.getElementById("btn-atm-submit").addEventListener("click", () => {
     function atmWithDraw(Card_No, pin, amount) {
         let flag = 0;
-        for(let i=0; i<BankDetails.length; i++) {
-            if( (BankDetails[i].Card_No == cardNo) && (BankDetails[i].pin == pin) ) {
+        for(const element of BankDetails) {
+            if( (element.Card_No == cardNo) && (element.pin == pin) ) {
                 flag = 1;
-                if(amount <= BankDetails[i].Account_Balance) {
-                    BankDetails[i].Account_Balance -= amount;
-                    alert("Amount Withdrawn : "+amount+"\nBalance : "+BankDetails[i].Account_Balance);
+                if(amount <= element.Account_Balance) {
+                    element.Account_Balance -= amount;
+                    alert("Amount Withdrawn : "+amount+"\nBalance : "+element.Account_Balance);
                 }
                 else {
                     alert("Insufficiant Balance");
