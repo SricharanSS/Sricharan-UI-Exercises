@@ -32,6 +32,7 @@ nav {
     height: 70px;
     border-radius: 50%;
     background-color: #d8d8d8;
+    cursor: pointer;
 }
 .dropdown-content {
     display: none;
@@ -44,15 +45,16 @@ nav {
 }
 .dropdown-content ul {
     background-color: #eee;
-    height: 194px;
     width: 260px;
     padding: 12px 0;
+    height: fit-content;
 }
 .dropdown-content li {
     font-weight: 600;
     background-color: #eee;
-    padding: 12px 25px;
+    padding: 8px 25px;
     list-style: none;
+    cursor: pointer;
 }
 .dropdown:hover .dropdown-content{
     display: block;
