@@ -47,7 +47,7 @@ document.getElementById("btn-atm-submit").addEventListener("click", () => {
     function atmWithDraw(Card_No, pin, amount) {
         let flag = 0;
         for(let i=0; i<BankDetails.length; i++) {
-            if(BankDetails[i].Card_No == cardNo && BankDetails[i].pin == pin) {
+            if( (BankDetails[i].Card_No == cardNo) && (BankDetails[i].pin == pin) ) {
                 flag = 1;
                 if(amount <= BankDetails[i].Account_Balance) {
                     BankDetails[i].Account_Balance -= amount;
