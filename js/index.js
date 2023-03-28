@@ -2,8 +2,8 @@
 $.getJSON('https://mocki.io/v1/8c9b378b-d248-4203-93b0-b8e7659ac346', function(data) {
     // JSON result in `data` variable\
     const posterContainer = document.getElementById("posters");
-    for(let i=0; i<data.length; i++) {
-        posterContainer.innerHTML += "<img src=' "+data[i].imageUrl+" ' alt=' "+data[i].title+" ' />";
+    for(const element of data) {
+        posterContainer.innerHTML += "<img src=' "+element.imageUrl+" ' alt=' "+element.title+" ' />";
     }
 });
 
@@ -11,8 +11,9 @@ $.getJSON('https://mocki.io/v1/8c9b378b-d248-4203-93b0-b8e7659ac346', function(d
 const videoContainer = document.getElementById("video-container");
 const commentContainer = document.getElementById("comments"); 
 $.getJSON('https://mocki.io/v1/4da47fc5-bbf3-4e41-b35f-c88a584bc4b0', function(data) {
-    videoContainer.innerHTML += "<video width='100%' height='100%' controls>";
-    videoContainer.innerHTML += "<source src=' "+data.videoUrl+" ' type='video/mp4' >";
+    videoContainer.innerHTML += "<video width='100%' height='100%' autoplay='true' controls>";
+    console.log(data.videoUrl);
+    videoContainer.innerHTML += "<source src='"+data.videoUrl+"' type='video/mp4' >";
     videoContainer.innerHTML += "</video>";
 
     /* Load Highlight's Title */
