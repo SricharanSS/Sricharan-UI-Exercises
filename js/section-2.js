@@ -21,7 +21,7 @@ for(let i=0; i<playerList.length; i++) {
 }
 
 // Store player name and jersey number
-var playerMap = {};
+let playerMap = {};
 for(let i=0; i<playerList.length; i++) {
     playerMap[playerList[i].toUpperCase()] = Math.floor((Math.random() * 100) + 1);
 }
