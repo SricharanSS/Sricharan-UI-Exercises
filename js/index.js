@@ -1,5 +1,5 @@
 let notes = [
-                {
+    {
         "title" : "Title1",
         "date" : "Jan 02, 2001",
         "content" : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex expedita tenetur doloremque laborum cumque sequi aliquam dignissimos ullam iure, error quasi consequatur eveniet harum nihil deserunt illum soluta. Cumque, nemo Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ut a doloribus ipsam, quas beatae dolore. Nemo cumque, nulla quas ullam ratione sit unde, deserunt atque vero, tempora nostrum debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore totam perferendis magni minima delectus dolores dignissimos voluptate asperiores laborum possimus facere, dolorem obcaecati iure impedit praesentium maxime quas repellendus.",
@@ -160,7 +160,7 @@ const addNoteForm = document.getElementById("add-note-form");
 addNoteForm.addEventListener("click", function(event) {
     if(event.target.tagName === "BUTTON") {
         let date = "Jan 02, 2001";
-        notes.push({"title" : title, "date" : date, "content": content});
+        notes.unshift({"title" : title, "date" : date, "content": content});
         document.getElementsByClassName("modal")[0].style.display = "none";
     }
     LoadNotes();
