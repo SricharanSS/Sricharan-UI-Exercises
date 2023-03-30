@@ -1,4 +1,4 @@
-const notes = [
+let notes = [
                 {
         "title" : "Title1",
         "date" : "Jan 02, 2001",
@@ -121,10 +121,50 @@ const backbtn = document.getElementById("back-btn");
 const loadMoreBtn = document.getElementById("load-more-btn");
 
 
+/* Button Elements */ 
 const deleteBtn = document.getElementById("delete-btn");
 const deleteAllBtn = document.getElementById("delete-all-btn");
 const editBtn = document.getElementById("edit-btn");
 const newBtn = document.getElementById("new-btn");
+const addBtn = document.getElementById("add-btn");
+
+
+/* Event Listener for New Button */
+newBtn.addEventListener("click", function() {
+    document.getElementsByClassName("modal")[0].style.display = "inline-block";
+}); 
+
+/* Event Listener for Closing Add New Note Modal */
+const newModal = document.getElementById("new-modal");
+newModal.addEventListener("click", function(event) {
+    event.preventDefault();
+    if(event.target.tagName === 'I') {
+        document.getElementsByClassName("modal")[0].style.display = "none";
+    }
+});
+
+/* GET Title */
+let title;
+document.getElementById("note-title").addEventListener("blur", function(event) {
+    title = event.target.value;
+});
+
+/* GET Content */ 
+let content;
+document.getElementById("note-content").addEventListener("blur", function(event) {
+    content = event.target.value;
+});
+
+/* Event Listener for Add Button */
+const addNoteForm = document.getElementById("add-note-form");
+addNoteForm.addEventListener("click", function(event) {
+    if(event.target.tagName === "BUTTON") {
+        let date = "Jan 02, 2001";
+        notes.push({"title" : title, "date" : date, "content": content});
+        document.getElementsByClassName("modal")[0].style.display = "none";
+    }
+    LoadNotes();
+});
 
 
 /* Load More Button Functionality */ 

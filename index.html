@@ -57,9 +57,15 @@
         </div>
 
         <div id="new-modal">
-            <form>
-                <input type="text" placeholder="Add Title Here" maxlength="100" name="title" id="note-title"/>
+            <div>
+                <p>NEW NOTE</p>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <form id="add-note-form">
+                <input type="text" placeholder="Notes Title" maxlength="100" name="title" id="note-title"/>
                 <input type="text" placeholder="Add Content Here" name="content" id="note-content"/>
+
+                <button id="add-btn">ADD</button>
             </form>
         </div>
     </div>

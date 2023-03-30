@@ -1,10 +1,20 @@
 $White : #ffffff;
+$fontColor2 : #535E67;
 $bodyBackground : #000000;
 $buttonColor1 : #B355B7;
 $buttonColor2 : #A80000;
+$formTitleColor : #041D2E;
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+button {
+    color: $White;
+    font-size: 17px;
+    padding: 12px 35px;
+    border-radius: 25px;
+    border-style: none;
 }
 
 nav {
@@ -32,13 +42,6 @@ nav {
     }
     div {
         margin: 20px 30px;
-        button {
-            color: $White;
-            font-size: 17px;
-            padding: 12px 35px;
-            border-radius: 25px;
-            border-style: none;
-        }
         #delete-btn {
             display: none;
             background-color: $buttonColor2;
@@ -101,6 +104,7 @@ body {
         }
     }
     .modal {
+        display: none;
         color: $White;
         position: absolute;
         right: 0;
@@ -109,16 +113,59 @@ body {
         height: 100vh;
         z-index: 2;
         background-color: $bodyBackground;
+        #new-modal {
+            padding: 40px;
+            div {
+                font-size: 15px;
+                background-color: $formTitleColor;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 18px;
+                p {
+                    color: $White;
+                    font-weight: 600;
+                }
+                i {
+                    color: $fontColor2;
+                    cursor: pointer;
+                }
+            } 
+            input {
+                color: $White;
+                border: none;
+                background-color: $bodyBackground;
+                width: 100%;
+                margin: 20px auto;
+            }
+            #note-title {
+                font-size: 30px;
+            }
+            #note-content {
+                font-weight: 100;
+                font-size: 18px;
+            }
+            input:focus {
+                outline: none;
+            }
+            #add-btn {
+                position: fixed;
+                right: 40px;
+                bottom: 25px;
+                background-color: $buttonColor1;
+            }
+        }
     }
     #main-container {
         color: $White;
         padding: 135px 10.5%;
+        margin: auto;
         #note-container {
             width: 100%;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 3vh 2.5%;
+            gap: 3vh;
             // background-color: pink;
             a {
                 color: inherit;
@@ -126,7 +173,7 @@ body {
             }
         }
         .note {
-            width: 23%;
+            width: 314px;
             height: 416px;
             overflow: hidden;
             padding: 25px 20px;

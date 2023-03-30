@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+button {
+  color: #ffffff;
+  font-size: 17px;
+  padding: 12px 35px;
+  border-radius: 25px;
+  border-style: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -29,13 +37,6 @@ nav #back-btn {
 }
 nav div {
   margin: 20px 30px;
-}
-nav div button {
-  color: #ffffff;
-  font-size: 17px;
-  padding: 12px 35px;
-  border-radius: 25px;
-  border-style: none;
 }
 nav div #delete-btn {
   display: none;
@@ -93,6 +94,7 @@ body #load-more-container #load-more-btn {
   background-color: #B355B7;
 }
 body .modal {
+  display: none;
   color: #ffffff;
   position: absolute;
   right: 0;
@@ -102,23 +104,66 @@ body .modal {
   z-index: 2;
   background-color: #000000;
 }
+body .modal #new-modal {
+  padding: 40px;
+}
+body .modal #new-modal div {
+  font-size: 15px;
+  background-color: #041D2E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 18px;
+}
+body .modal #new-modal div p {
+  color: #ffffff;
+  font-weight: 600;
+}
+body .modal #new-modal div i {
+  color: #535E67;
+  cursor: pointer;
+}
+body .modal #new-modal input {
+  color: #ffffff;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  margin: 20px auto;
+}
+body .modal #new-modal #note-title {
+  font-size: 30px;
+}
+body .modal #new-modal #note-content {
+  font-weight: 100;
+  font-size: 18px;
+}
+body .modal #new-modal input:focus {
+  outline: none;
+}
+body .modal #new-modal #add-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 25px;
+  background-color: #B355B7;
+}
 body #main-container {
   color: #ffffff;
   padding: 135px 10.5%;
+  margin: auto;
 }
 body #main-container #note-container {
   width: 100%;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 3vh 2.5%;
+  gap: 3vh;
 }
 body #main-container #note-container a {
   color: inherit;
   display: contents;
 }
 body #main-container .note {
-  width: 23%;
+  width: 314px;
   height: 416px;
   overflow: hidden;
   padding: 25px 20px;
