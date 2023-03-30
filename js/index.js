@@ -60,15 +60,13 @@ const content = {
 /* Load Upcoming Project Posters */
 const posterContainer = document.getElementById("posters");
 for(const element of postersList) {
-    posterContainer.innerHTML += "<img src=' "+element.imageUrl+" ' alt=' "+element.title+" ' />";
+    posterContainer.innerHTML += "<img src='"+element.imageUrl+"' alt=' "+element.title+" ' />";
 }
 
 /* Load Video in Highlight */
 const videoContainer = document.getElementById("video-container");
 
-videoContainer.innerHTML += "<video width='100%' height='100%' controls>";
-videoContainer.innerHTML += "<source src=' "+content.videoUrl+" ' type='video/mp4' >";
-videoContainer.innerHTML += "</video>";
+videoContainer.innerHTML += "<video width='100%' height='100%' controls> <source src=' "+content.videoUrl+" ' type='video/mp4' > </video>";
 
 /* Load Highlight's Title */
 document.getElementById("highlight-title").innerHTML = "<p>"+content.title+"</p>";
