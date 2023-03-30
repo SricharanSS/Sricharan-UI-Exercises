@@ -1,0 +1,32 @@
+[
+    {
+        "Account_No" : 50001,
+        "Card_No" : 10005,
+        "pin" : 123,
+        "Account_Balance" : 15000
+    },
+    {
+        "Account_No" : 50002,
+        "Card_No" : 20005,
+        "pin" : 123,
+        "Account_Balance" : 30000
+    },
+    {
+        "Account_No" : 50003,
+        "Card_No" : 30005,
+        "pin" : 123,
+        "Account_Balance" : 5000
+    },
+    {
+        "Account_No" : 50004,
+        "Card_No" : 40005,
+        "pin" : 123,
+        "Account_Balance" : 25000
+    },
+    {
+        "Account_No" : 50005,
+        "Card_No" : 50005,
+        "pin" : 123,
+        "Account_Balance" : 45000
+    }
+]
