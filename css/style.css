@@ -105,6 +105,7 @@ body .modal {
   background-color: #000000;
 }
 body .modal #new-modal {
+  display: none;
   padding: 40px;
 }
 body .modal #new-modal div {
@@ -141,6 +142,49 @@ body .modal #new-modal input:focus {
   outline: none;
 }
 body .modal #new-modal #add-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 25px;
+  background-color: #B355B7;
+}
+body .modal #edit-modal {
+  display: none;
+  padding: 40px;
+}
+body .modal #edit-modal div {
+  font-size: 15px;
+  background-color: #041D2E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 18px;
+}
+body .modal #edit-modal div p {
+  color: #ffffff;
+  font-weight: 600;
+}
+body .modal #edit-modal div i {
+  color: #535E67;
+  cursor: pointer;
+}
+body .modal #edit-modal input {
+  color: #ffffff;
+  border: none;
+  background-color: #000000;
+  width: 100%;
+  margin: 20px auto;
+}
+body .modal #edit-modal #note-title {
+  font-size: 30px;
+}
+body .modal #edit-modal #note-content {
+  font-weight: 100;
+  font-size: 18px;
+}
+body .modal #edit-modal input:focus {
+  outline: none;
+}
+body .modal #edit-modal #save-btn {
   position: fixed;
   right: 40px;
   bottom: 25px;

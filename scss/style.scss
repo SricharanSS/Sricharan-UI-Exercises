@@ -114,6 +114,7 @@ body {
         z-index: 2;
         background-color: $bodyBackground;
         #new-modal {
+            display: none;
             padding: 40px;
             div {
                 font-size: 15px;
@@ -149,6 +150,49 @@ body {
                 outline: none;
             }
             #add-btn {
+                position: fixed;
+                right: 40px;
+                bottom: 25px;
+                background-color: $buttonColor1;
+            }
+        }
+        #edit-modal {
+            display: none;
+            padding: 40px;
+            div {
+                font-size: 15px;
+                background-color: $formTitleColor;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 18px;
+                p {
+                    color: $White;
+                    font-weight: 600;
+                }
+                i {
+                    color: $fontColor2;
+                    cursor: pointer;
+                }
+            } 
+            input {
+                color: $White;
+                border: none;
+                background-color: $bodyBackground;
+                width: 100%;
+                margin: 20px auto;
+            }
+            #note-title {
+                font-size: 30px;
+            }
+            #note-content {
+                font-weight: 100;
+                font-size: 18px;
+            }
+            input:focus {
+                outline: none;
+            }
+            #save-btn {
                 position: fixed;
                 right: 40px;
                 bottom: 25px;

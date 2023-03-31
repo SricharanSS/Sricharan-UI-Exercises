@@ -132,6 +132,7 @@ const addBtn = document.getElementById("add-btn");
 /* Event Listener for New Button */
 newBtn.addEventListener("click", function() {
     document.getElementsByClassName("modal")[0].style.display = "inline-block";
+    document.getElementById("new-modal").style.display = "block";
 }); 
 
 /* Event Listener for Closing Add New Note Modal */
@@ -140,8 +141,26 @@ newModal.addEventListener("click", function(event) {
     event.preventDefault();
     if(event.target.tagName === 'I') {
         document.getElementsByClassName("modal")[0].style.display = "none";
+        document.getElementById("new-modal").style.display = "none";
     }
 });
+
+/* Event Listener for Edit Button */
+editBtn.addEventListener("click", function() {
+    document.getElementsByClassName("modal")[0].style.display = "inline-block";
+    document.getElementById("edit-modal").style.display = "block";
+});
+
+/* Event Listener for Closing Edit Note Modal */ 
+const editModal = document.getElementById("edit-modal");
+editModal.addEventListener("click", function(event) {
+    event.preventDefault();
+    if(event.target.tagName === "I") {
+        document.getElementsByClassName("modal")[0].style.display = "none";
+        document.getElementById("edit-modal").style.display = "none";
+    }
+});
+
 
 /* GET Title */
 let title;

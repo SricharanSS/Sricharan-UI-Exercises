@@ -53,7 +53,16 @@
     <!-- Add New Note Model-1 - START -->
     <div class="modal">
         <div id="edit-modal">
-        
+            <div>
+                <p>EDIT NOTE</p>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <form id="edit-note-form">
+                <input type="text" placeholder="Notes Title" maxlength="100" name="title" id="note-title"/>
+                <input type="text" placeholder="Add Content Here" name="content" id="note-content"/>
+
+                <button id="save-btn">SAVE</button>
+            </form>
         </div>
 
         <div id="new-modal">
