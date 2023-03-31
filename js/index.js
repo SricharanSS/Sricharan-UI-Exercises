@@ -120,7 +120,6 @@ const backbtn = document.getElementById("back-btn");
 
 const loadMoreBtn = document.getElementById("load-more-btn");
 
-
 /* Button Elements */ 
 const deleteBtn = document.getElementById("delete-btn");
 const deleteAllBtn = document.getElementById("delete-all-btn");
@@ -128,6 +127,28 @@ const editBtn = document.getElementById("edit-btn");
 const newBtn = document.getElementById("new-btn");
 const addBtn = document.getElementById("add-btn");
 
+
+/* Load More Button Functionality */ 
+let editTitle;
+let editContent;
+loadMoreBtn.addEventListener('click', function() {
+    LoadNotes();
+    for(let i=0; i<notes.length; i++) {
+        $("#note-"+i).on("click", function() {
+            notesContainer.style.display = "none";
+            backbtn.style.display = "inline-block";
+            loadMoreBtn.style.display = "none";
+
+            deleteAllBtn.style.display = "none";
+            newBtn.style.display = "none";
+            deleteBtn.style.display = "inline-block";
+            editBtn.style.display = "inline-block";
+            editTitle = notes[i].title;
+            editContent = notes[i].content;
+            noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
+        });
+    }
+});
 
 /* Event Listener for New Button */
 newBtn.addEventListener("click", function() {
@@ -149,6 +170,9 @@ newModal.addEventListener("click", function(event) {
 editBtn.addEventListener("click", function() {
     document.getElementsByClassName("modal")[0].style.display = "inline-block";
     document.getElementById("edit-modal").style.display = "block";
+
+    document.getElementById("edit-title").value = editTitle;
+    document.getElementById("edit-content").value = editContent;
 });
 
 /* Event Listener for Closing Edit Note Modal */ 
@@ -186,24 +210,7 @@ addNoteForm.addEventListener("click", function(event) {
 });
 
 
-/* Load More Button Functionality */ 
-loadMoreBtn.addEventListener('click', function() {
-    LoadNotes();
-    for(let i=0; i<notes.length; i++) {
-        $("#note-"+i).on("click",function() {
-            notesContainer.style.display = "none";
-            backbtn.style.display = "inline-block";
-            loadMoreBtn.style.display = "none";
 
-            deleteAllBtn.style.display = "none";
-            newBtn.style.display = "none";
-            deleteBtn.style.display = "inline-block";
-            editBtn.style.display = "inline-block";
-
-            noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
-        });
-    }
-});
 
 /* Load Notes */ 
 let index = 0;
@@ -248,7 +255,8 @@ $(document).ready(()=> {
             deleteBtn.style.display = "inline-block";
             editBtn.style.display = "inline-block";
 
-
+            editTitle = notes[i].title;
+            editContent = notes[i].content;
             noteDisplay.innerHTML = "<div id='note-"+i+"'> <h2>"+notes[i].title+"</h2> <p class='date' >"+notes[i].date+"</p> <p class='content' > "+notes[i].content+"</p> </div>";
         });
     }
